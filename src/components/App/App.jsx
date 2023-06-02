@@ -25,9 +25,7 @@ export const App = () => {
   }, [contacts]);
 
   const checkName = name => {
-    const result = contacts.find(contact => contact.name === name);
     return contacts.find(contact => contact.name === name);
-    return result ? true : false;
   };
 
   const addContact = obj => {
